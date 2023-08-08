@@ -487,3 +487,35 @@ figcaption a {
 .next-navigation a:hover {
   text-decoration: underline;
 }
+
+
+/*------------------------------------*/
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this value if needed */
+}
+
+.right-side-box {
+  text-align: center;
+}
+
+.right-side-box a{
+  color: white;
+  font-weight: bold;
+  background-color: #cd2828;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.right-side-box a:hover{
+  background-color: #114f9a;
+}
+/* Example of media queries for responsiveness */
+@media (max-width: 768px) {
+  .center-box {
+    flex-direction: column;
+  }
+}
