@@ -76,6 +76,13 @@ a:focus {
 	overflow: hidden;
 }
 
+.page-content .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    max-width: 95%;
+}
+
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
