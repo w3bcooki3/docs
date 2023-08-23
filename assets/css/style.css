@@ -2556,45 +2556,49 @@ a:focus {
 
 
  /*--------------------------------*/
+ .docs-overview{
+	margin-bottom: 50px;
+	margin-top: 5rem;
+ }
  .docs-overview .card{
+	
 	border-color:#e7e9ed;
 	position:relative;
-	height:100%;
+	height: 100%;
 	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06);
   }
   
   .docs-overview .card:hover .card-icon-holder{
 	color: red;
   }
-  .docs-overview .card-icon-holder{
+  .docs-overview .card-icon-holder img{
 	width:60px;
-	height:60px;
+	height:50px;
 	font-size:1.5rem;
-	padding-top:1rem;
-	display:inline-block;
-	color: #114f9a;
+	margin-left: 10px;
+	margin-top: -0px;
   }
-  .docs-overview .card-title-text{
+  .docs-overview .card-title-text a{
 	display:inline-block;
 	position:relative;
 	font-weight: bold;
-	top:-0.3rem;
+	padding: 0 1rem 0;
+	top:0.3rem;
 	font-size: 28px;
+	color: white;
+  }
+  .docs-overview .card-title{
+	background-color:#114f9a;
+	border-radius: 8px;
   }
 
   .docs-overview .card-text{
 	font-size: 16px;
+	margin-top: 1.5rem;
   }
   
   .docs-overview .card-text li{
 	margin-bottom: 10px;
-  }
-  .docs-overview .card-link-mask{
-	position:absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0
   }
 
 /*------------------------------------*/
