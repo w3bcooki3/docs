@@ -2603,6 +2603,7 @@ a:focus {
 
 /*------------------------------------*/
 .docs-categories{
+	margin-top: 50px;
 	background-color: #f4f4f4;
 	 width: 100%;
 	 display: flex;
@@ -2645,12 +2646,16 @@ a:focus {
 	padding: 15em 0.5em;
    }
    .docs-categories .title{
-	 font-size: 1em;
+	 font-size: 1.3em;
 	 color: #2C3E50;
-	 border-bottom: 1px solid rgba(0,0,0,0.1);
-	 margin-bottom: 0.8em;
+	 text-decoration: underline;
 	 font-weight: 600;
-	 padding-bottom: 8px;
+   }
+
+   .docs-categories .card-details{
+	color: rgb(37, 37, 37);
+	font-weight: 10;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
    }
 
    .docs-categories .card-details{
