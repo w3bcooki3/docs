@@ -2605,11 +2605,11 @@ a:focus {
 .docs-categories{
 	margin-top: 50px;
 	background-color: #f4f4f4;
-	 width: 100%;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: center;
-	 align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
    }
    .card-holder {
 	 margin: 2em 0;
@@ -2621,10 +2621,10 @@ a:focus {
 	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    }
    .card-design {
-	 background: -webkit-linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
-	 background: -o-linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
-	 background: -moz-linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
-	 background: linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
+	 background: -webkit-linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
+	 background: -o-linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
+	 background: -moz-linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
+	 background: linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
    }
    
    .docs-categories .categorylist{
@@ -2676,9 +2676,9 @@ a:focus {
 	   }
 
 	   .card-design {
-		background: -webkit-linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
-		background: -o-linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
-		background: -moz-linear-gradient(85deg, #114f9a 40%, #ffffff 40%);
-		background: linear-gradient(85deg, #114f9a 80%, #ffffff 40%);
+		background: -webkit-linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
+		background: -o-linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
+		background: -moz-linear-gradient(460deg, #114f9a 40%, #ffffff 40%);
+		background: linear-gradient(460deg, #114f9a 80%, #ffffff 40%);
 	  } 
    }
