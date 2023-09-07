@@ -284,6 +284,12 @@
 .docs-article .docs-section p:last-child{
   margin-bottom:0
 }
+
+.docs-article .docs-section h2{
+  font-size: 22px;
+  color: black;
+}
+
 .docs-article .section-heading{
   font-size:2.875rem;
   margin-bottom:1rem;
@@ -478,6 +484,7 @@ figcaption a {
   color: red;
   margin-bottom: 10px; /* Add some space between the two links */
 }
+
 
 .next-navigation a {
   text-decoration: none;
