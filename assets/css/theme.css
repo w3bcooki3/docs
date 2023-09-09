@@ -155,7 +155,7 @@
 }
 .docs-sidebar{
   display:none;
-  width:380px;
+  width:360px;
   position:fixed;
   z-index:10;
   top:70px;
@@ -190,7 +190,7 @@
   position:relative
 }
 .docs-nav .nav-item{
-  margin-left:2.5rem;
+  margin-left:1.5rem;
   font-size: 16px;
   font-family: Montserrat,sans-serif;
 }
@@ -252,7 +252,7 @@
   padding-bottom:100px
 }
 .docs-article{
-  padding:2rem;
+  padding:1rem;
   color: black;
   scroll-margin-top:69px;
   scroll-snap-margin-top:69px
@@ -556,62 +556,43 @@ figcaption a {
     font-size: 18px;
     color: #333; 
     }
-  
-    /*------------------------------------*/
 
-    .custom-li {
-      list-style: none;
-      margin-bottom: 20px;
-  }
-
-  /* Styling for the image */
-  .custom-img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      cursor: pointer;
-      transition: transform 0.3s;
-  }
-
-  /* Media query for larger screens */
-  @media (min-width: 768px) {
-      .custom-img {
-          max-width: 80%;
-          margin: 0 auto;
-      }
-  }
- 
-
-  /* Styling for the pop-up overlay */
-  .custom-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 1;
-  }
-
-  /* Styling for the popped-out image */
-  .custom-popup-image {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 65%;
-      transform: translate(-50%, -50%);
-      max-width: 80%;
-      max-height: 80%;
-  }
-  @media (max-width: 767px) {
-    .custom-popup-image {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 90%;
-        max-height: 90%;
-    }
+/*------------------------------------*/
+/* Default styles for accordion sections */
+.example-accordion .accordion-section {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
+
+.example-accordion .accordion-header {
+  background-color: #f0f0f0;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.example-accordion .accordion-header .icon {
+  transition: transform 0.3s ease;
+}
+
+.example-accordion .accordion-header.open .icon {
+  transform: rotate(180deg);
+}
+
+.example-accordion .accordion-content {
+  max-height: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .example-accordion .accordion-header {
+    padding: 18px;
+  }
+}
+

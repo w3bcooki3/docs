@@ -148,26 +148,41 @@
                         <section class="docs-section" id="section-1.1">
 							<h2><strong>Section 3: Real World Examples</strong></h2>
 							<p>Here are some real-world examples of fake package delivery scams</p>
-							<ul>
-								<li class="custom-li">
-									1. Fake UPS email to update your delivery address
-									<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/package_delivery1.png" alt="Fake Package Delivery Email Image"><br>
-									<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/package_delivery2.png" alt="Fake Package Delivery Email Image"><br>
-									<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/package_delivery3.png" alt="Fake Package Delivery Email Image">
-								</li>
-								<li class="custom-li">
-									2. Fake UPS email with tracking information
-									<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/ups_scam2.2.png" alt="Fake Package Delivery Email Image"><br>
-									<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/ups_scam2.1.png" alt="Fake Package Delivery Email Image"><br>
-									<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/ups_scam2.png" alt="Fake Package Delivery Email Image">
-								</li>
-    						</ul>
 
-							<!-- The overlay for the popped-out image -->
-    						<div id="customImageOverlay" class="custom-overlay">
-    						    <!-- The popped-out image -->
-    						    <img id="customPoppedImage" class="custom-popup-image" src="" alt="Popped Out Image">
-    						</div>
+							<div class="example-accordion accordion">
+								<div class="accordion-section">
+									<div class="accordion-header">UPS Address Update 
+										<i class="fas fa-chevron-down icon"></i>
+								  	</div>
+								  	<div class="accordion-content">
+										<ul>
+											<li>
+												1. Fake UPS email to update your delivery address
+												<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/package_delivery1.png" alt="Fake Package Delivery Email Image"><br>
+												<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/package_delivery2.png" alt="Fake Package Delivery Email Image"><br>
+												<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/package_delivery3.png" alt="Fake Package Delivery Email Image">
+											</li>
+											<li>
+												2. Fake UPS email with tracking information
+												<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/ups_scam2.2.png" alt="Fake Package Delivery Email Image"><br>
+												<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/ups_scam2.1.png" alt="Fake Package Delivery Email Image"><br>
+												<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/ups_scam2.png" alt="Fake Package Delivery Email Image">
+											</li>
+										</ul>
+								  	</div>
+								</div>
+								<div class="accordion-section">
+									<div class="accordion-header">UPS Tracking
+										<i class="fas fa-chevron-down icon"></i>
+								  	</div>
+								  	<div class="accordion-content">
+									sfsfsf
+								  	</div>
+								</div>
+
+							  </div>
+							  
+							
 
 						</section>
 						
@@ -215,25 +230,24 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 	<script>
-        // JavaScript to handle image pop-out
-        const customImages = document.querySelectorAll('.custom-img');
-        const customImageOverlay = document.getElementById('customImageOverlay');
-        const customPoppedImage = document.getElementById('customPoppedImage');
-
-        // Add click event listeners to all images
-        customImages.forEach((img) => {
-            img.addEventListener('click', () => {
-                customImageOverlay.style.display = 'block';
-                customPoppedImage.src = img.src; // Set the source of the popped image
-            });
-        });
-
-        // When the pop-out overlay is clicked, hide it
-        customImageOverlay.addEventListener('click', () => {
-            customImageOverlay.style.display = 'none';
-        });
-    </script>
+		const accordionHeaders = document.querySelectorAll('.accordion-header');
+		accordionHeaders.forEach(header => {
+		  header.addEventListener('click', () => {
+		    const content = header.nextElementSibling;
+		    const icon = header.querySelector('.icon');
+		
+		    if (content.style.maxHeight) {
+		      content.style.maxHeight = null;
+		      icon.classList.remove('open');
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + 'px';
+		      icon.classList.add('open');
+		    }
+		  });
+		});
+	</script>
 
 </body>
 </html> 
