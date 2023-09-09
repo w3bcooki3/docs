@@ -2561,7 +2561,6 @@ a:focus {
 	margin-top: 5rem;
  }
  .docs-overview .card{
-	
 	border-color:#e7e9ed;
 	position:relative;
 	height: 100%;
@@ -2600,6 +2599,9 @@ a:focus {
   .docs-overview .card-text li{
 	margin-bottom: 10px;
   }
+  .docs-overview .card-text a{
+	color: black;
+  }
 
 /*------------------------------------*/
 .docs-categories{
@@ -2613,6 +2615,7 @@ a:focus {
    }
    .card-holder {
 	 margin: 2em 0;
+	 padding-top: 45px;
    }
    .card-box {
 	 font-weight: 800;

@@ -190,7 +190,7 @@
   position:relative
 }
 .docs-nav .nav-item{
-  margin-left:1.5rem;
+  margin-left: 1.5rem;
   font-size: 16px;
   font-family: Montserrat,sans-serif;
 }
@@ -596,3 +596,48 @@ figcaption a {
   }
 }
 
+/*------------------------*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px; 
+}
+
+.card {
+  flex-basis: calc(33.33% - 30px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 0 15px 30px; 
+}
+
+.card-title {
+  margin-top: 10px; 
+  font-size: 20px; 
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.card .card-content a {
+  color: #666666;
+  text-decoration: none; 
+}
+
+.card img {
+  max-width: 100%;
+  height: auto; 
+}
+
+@media (max-width: 1024px) {
+  .card {
+      flex-basis: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex-basis: 100%; 
+  }
+}
