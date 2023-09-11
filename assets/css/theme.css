@@ -281,6 +281,15 @@
   scroll-margin-top:69px;
   scroll-snap-margin-top:69px
 }
+
+.docs-article .docs-section a{
+  color: black;
+}
+
+.docs-article .docs-section a:hover{
+  color: red;
+}
+
 .docs-article .docs-section p:last-child{
   margin-bottom:0
 }

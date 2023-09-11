@@ -2660,6 +2660,9 @@ a:focus {
 	font-weight: 10;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
    }
+   .docs-categories .card-details a{
+	color: black;
+   }
 
    .docs-categories .card-details{
 	 padding: 15px 25px 10px;
