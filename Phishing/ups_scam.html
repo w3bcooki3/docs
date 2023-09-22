@@ -118,21 +118,13 @@
                             
                               <div class="example-accordion accordion">
 								<div class="accordion-section">
-									<div class="accordion-header">UPS Address Update 
-										<i class="fas fa-chevron-down icon"></i>
-								  	</div>
-								  	<div class="accordion-content">
-										<img id="customPopupImage" class="custom-img" src="/assets/images/img/phishing/UPS Scam.png" width="700px" alt="Fake Package Delivery Email Image">
-								  	</div>
-								</div>
-								<div class="accordion-section">
 									<div class="accordion-header">UPS Tracking
 										<i class="fas fa-chevron-down icon"></i>
 								  	</div>
 								  	<div class="accordion-content">
                                         <div class="card-container">
                                             <div class="card">
-                                                <img src="/assets/images/img/phishing/UPS Scam.png">
+                                                <img src="/assets/images/img/phishing/UPS Scam.png" class="custom-img">
                                                 <div class="card-content">
                                                     <a href="https://www.nomoreransom.org/en/index.html" target="_blank">
                                                         <div class="card-title">No More Ransom</div>
@@ -140,7 +132,7 @@
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <img src="/assets/images/img/phishing/UPS Scam.png">
+                                                <img src="/assets/images/img/phishing/UPS Scam.png" class="custom-img">
                                                 <div class="card-content">
                                                     <a href="https://www.nomoreransom.org/en/index.html" target="_blank">
                                                         <div class="card-title">No More Ransom</div>
@@ -148,7 +140,7 @@
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <img src="/assets/images/img/phishing/UPS Scam.png">
+                                                <img src="/assets/images/img/phishing/UPS Scam.png" class="custom-img">
                                                 <div class="card-content">
                                                     <a href="https://www.nomoreransom.org/en/index.html" target="_blank">
                                                         <div class="card-title">No More Ransom</div>
@@ -161,8 +153,10 @@
 								</div>
 
 							  </div>
-							  
-							
+							  <div id="imageModal" class="modal">
+								<span class="close" id="closeModal">&times;</span>
+								<img class="modal-content" id="modalImage">
+							</div>
 
 						</section>
 						
@@ -228,6 +222,40 @@
 		  });
 		});
 	</script>
+	<script>
+        var modal = document.getElementById('imageModal');
+        var modalImg = document.getElementById('modalImage');
+        var closeModal = document.getElementById('closeModal');
+
+        // Get all the images you want to make responsive
+        var images = document.querySelectorAll('.custom-img');
+
+        // Loop through each image to add click event listeners
+        images.forEach(function (image) {
+            image.addEventListener('click', function () {
+                modal.style.display = 'block';
+                modalImg.src = this.src;
+                document.body.style.overflow = 'hidden'; // Disable scroll on the body
+            });
+        });
+
+        // Close the modal when the close button is clicked
+        closeModal.addEventListener('click', function () {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scroll on the body
+        });
+
+        // Close the modal when clicking outside the modal content
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Enable scroll on the body
+            }
+        });
+    </script>
+
+	
+	
 
 </body>
 </html> 
