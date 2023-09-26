@@ -683,21 +683,23 @@ figcaption a {
   max-height: 80vh; /* Adjust the max-height to your preference */
 }
 
-.close {
-  position: absolute;
-  top: 20px; /* Adjust top position as needed */
-  right: 120px; /* Adjust right position as needed */
-  color: white; /* Change color for better visibility */
-  font-size: 50px;
-  font-weight: bold;
-  cursor: pointer;
-}
 
 /* Responsive CSS for smaller screens */
 @media (max-width: 768px) {
   .close {
       top: 10px; /* Adjust top position for smaller screens */
-      right: 10px; /* Adjust right position for smaller screens */
-      font-size: 40px; /* Adjust font size for smaller screens */
+      right: 20px; /* Adjust right position for smaller screens */
+      font-size: 20px; /* Adjust font size for smaller screens */
   }
+}
+
+
+.close {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  color: white; /* Change color for better visibility */
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
