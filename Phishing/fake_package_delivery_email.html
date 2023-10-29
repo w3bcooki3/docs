@@ -262,12 +262,42 @@
 			    <footer class="footer">
 				    <div class="container text-center py-5">
 				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-			            <small class="copyright">Designed by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers<br>Thank you Riley :)</small>
+			            <small class="copyright">Designed by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for Developers<br>Thank You Riley :)</small>
 				    </div>
 			    </footer>
 		    </div> 
 	    </div>
     </div>
+
+	<div class="translator-container">
+        <div class="language-text">Translate this Page</div>
+        <div id="google_translate_element"></div>
+    </div>
+    
+    <button id="toggleTranslator" class="translator-button">
+        <i class="fas fa-language"></i> Translate
+    </button>
+    
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    
+        const translatorContainer = document.querySelector('.translator-container');
+        const toggleTranslatorButton = document.getElementById('toggleTranslator');
+    
+        toggleTranslatorButton.addEventListener('click', function() {
+            if (translatorContainer.style.display === 'none' || translatorContainer.style.display === '') {
+                translatorContainer.style.display = 'block';
+            } else {
+                translatorContainer.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
    
        
     <!-- Javascript -->          
